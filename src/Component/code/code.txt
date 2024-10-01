@@ -1,0 +1,40 @@
+const tickets = [
+    ["Paris", "Skopje"],
+    ["Zurich", "Amsterdam"],
+    ["Prague", "Zurich"],
+    ["Barcelona", "Berlin"],
+    ["Kiev", "Prague"],
+    ["Skopje", "Paris"],
+    ["Amsterdam", "Barcelona"],
+    ["Berlin", "Kiev"],
+    ["Berlin", "Amsterdam"],
+];
+
+const graph = {};
+
+for (const [start, end] of tickets) {
+    if (!graph[start]) {
+        graph[start] = [];
+    }
+    graph[start].push(end);
+}
+
+function findRoute(start, visited, route) {
+    route.push(start);
+    visited.add(start);
+    
+    if (graph[start]) {
+        for (const neighbor of graph[start]) {
+            if (!visited.has(neighbor)) {
+                findRoute(neighbor, visited, route);
+            }
+        }
+    }
+}
+
+const visited = new Set();
+const route = [];
+findRoute("Kiev", visited, route);
+
+console.log("The route your son traveled is:");
+console.log(route.join(" -> "));

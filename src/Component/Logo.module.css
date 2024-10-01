@@ -1,0 +1,41 @@
+.logoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2f2f2f;
+  }
+  
+  .diamond {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform: rotate(45deg);
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 20px solid transparent;
+    border-top-color: #00ab6b; /* Green */
+    border-right-color: #f05a28; /* Orange */
+    border-bottom-color: #f0c28d; /* Beige */
+    border-left-color: #0071ce; /* Blue */
+  }
+  
+  .text {
+    transform: rotate(-45deg);
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .subtext {
+    transform: rotate(-45deg);
+    color: white;
+    font-size: 14px;
+    position: absolute;
+    /* bottom: 63px; */
+    margin-top: 50px;
+    margin-left: 35PX;
+  }
+  
