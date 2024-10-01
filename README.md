@@ -1,8 +1,7 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1 create a logo using react and vite and module css 
+2 also add code in side component / code/code.txt 
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Screenshot 2024-10-01 190349](https://github.com/user-attachments/assets/346117ce-ef37-43ee-ac08-471b95b13afd)
